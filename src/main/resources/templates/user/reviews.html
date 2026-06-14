@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout :: head}">
+    <title>Product Reviews - Egg Depot</title>
+</head>
+
+<body th:replace="~{layout :: body}">
+    <div th:replace="~{layout :: title('Product Reviews')}"></div>
+    <div th:replace="~{layout :: header}"></div>
+    
+    <div th:replace="~{layout :: content(~{:: .content})}">
+        <div class="content">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1><i class="fas fa-star"></i> Product Reviews</h1>
+                <button class="btn btn-outline-primary">
+                    <i class="fas fa-pen"></i> Write Review
+                </button>
+            </div>
+
+            <!-- Review Stats -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="text-warning">4.5</h3>
+                            <p class="card-text">Average Rating</p>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="text-success">156</h3>
+                            <p class="card-text">Total Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="text-info">89%</h3>
+                            <p class="card-text">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews List -->
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-comments"></i> Recent Reviews</h5>
+                        </div>
+                        <div class="card-body">
+                            <!-- Review 1 -->
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <h6 class="mb-1">Fresh Chicken Eggs - Large</h6>
+                                        <div class="text-warning mb-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">By John Smith - 2 days ago</small>
+                                </div>
+                                <p class="mb-2">Excellent quality eggs! Very fresh and the shells were clean. The yolks were bright orange which indicates healthy free-range hens. Perfect for my weekend breakfast!</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="badge bg-success">Verified Purchase</span>
+                                    <button class="btn btn-sm btn-outline-primary">Helpful (12)</button>
+                                </div>
+                            </div>
+
+                            <!-- Review 2 -->
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <h6 class="mb-1">Organic Chicken Eggs - Medium</h6>
+                                        <div class="text-warning mb-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">By Jane Johnson - 1 week ago</small>
+                                </div>
+                                <p class="mb-2">Great organic eggs! Love knowing they're from certified organic farms. The taste is noticeably better than regular eggs. Will definitely order again.</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="badge bg-success">Verified Purchase</span>
+                                    <button class="btn btn-sm btn-outline-primary">Helpful (8)</button>
+                                </div>
+                            </div>
+
+                            <!-- Review 3 -->
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <h6 class="mb-1">Duck Eggs - Large</h6>
+                                        <div class="text-warning mb-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">By Bob Wilson - 2 weeks ago</small>
+                                </div>
+                                <p class="mb-2">Rich and flavorful! These duck eggs elevated my baking game. The yolks are much richer than chicken eggs. Perfect for gourmet recipes.</p>
+                                <div class="d-flex justify-content-between">
+                                    <span class="badge bg-success">Verified Purchase</span>
+                                    <button class="btn btn-sm btn-outline-primary">Helpful (15)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Write Review Section -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-pen"></i> Write a Review</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Select Product</label>
+                                    <select class="form-select">
+                                        <option value="">Choose a product...</option>
+                                        <option value="1">Fresh Chicken Eggs - Large</option>
+                                        <option value="2">Organic Chicken Eggs - Medium</option>
+                                        <option value="3">Duck Eggs - Large</option>
+                                        <option value="4">Quail Eggs - Small</option>
+                                        <option value="5">Goose Eggs - Extra Large</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Your Rating</label>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="rating" id="rating1">
+                                            <label class="form-check-label" for="rating1">1</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="rating" id="rating2">
+                                            <label class="form-check-label" for="rating2">2</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="rating" id="rating3">
+                                            <label class="form-check-label" for="rating3">3</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="rating" id="rating4">
+                                            <label class="form-check-label" for="rating4">4</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="rating" id="rating5">
+                                            <label class="form-check-label" for="rating5">5</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Your Review</label>
+                                    <textarea class="form-control" rows="4" placeholder="Share your experience with this product..."></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="recommend">
+                                        <label class="form-check-label" for="recommend">I recommend this product</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Submit Review</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

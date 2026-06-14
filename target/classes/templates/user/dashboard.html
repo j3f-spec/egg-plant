@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout :: head}">
+    <title>User Dashboard</title>
+</head>
+
+<body th:replace="~{layout :: body}">
+    <div th:replace="~{layout :: title('User Dashboard')}"></div>
+    <div th:replace="~{layout :: header}"></div>
+    
+    <div th:replace="~{layout :: content(~{:: .content})}">
+        <div class="content">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1><i class="fas fa-user"></i> User dashboard</h1>
+                <div>
+                    <span class="badge bg-success">Welcome back!</span>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="row mb-4">
+                <div class="col-md-3 mb-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-shopping-cart fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Place Order</h5>
+                            <p class="card-text">Order fresh eggs from our depot</p>
+                            <a th:href="@{/user/orders}" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-box fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">View Inventory</h5>
+                            <p class="card-text">Check available products</p>
+                            <a th:href="@{/user/inventory}" class="btn btn-success">Browse</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-map-marker-alt fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Find Locations</h5>
+                            <p class="card-text">Locate nearest depot</p>
+                            <a th:href="@{/user/locations}" class="btn btn-warning">Find</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-star fa-3x text-info mb-3"></i>
+                            <h5 class="card-title">Reviews</h5>
+                            <p class="card-text">Read product reviews</p>
+                            <a th:href="@{/user/reviews}" class="btn btn-info">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Orders -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-history"></i> Recent Orders</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Date</th>
+                                            <th>Items</th>
+                                            <th>Total</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <script>
+                                            const orderRow = `
+                                            <tr>
+                                                <td>#ORD-001</td>
+                                                <td>2024-04-05</td>
+                                                <td>3 items</td>
+                                                <td>$24.97</td>
+                                                <td><span class="badge bg-success">Delivered</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-info">View Details</button>
+                                                </td>
+                                            </tr>
+                                            `
+                                            
+                                            /*<tr>
+                                                <td>#ORD-002</td>
+                                                <td>2024-04-03</td>
+                                                <td>2 items</td>
+                                                <td>$15.98</td>
+                                                <td><span class="badge bg-warning">In Transit</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-info">Track</button>
+                                                </td>
+                                            </tr>*/
+                                        </script>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a th:href="@{/user/orders}" class="btn btn-outline-primary">View All Orders</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

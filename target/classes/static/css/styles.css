@@ -1,0 +1,113 @@
+/*index.html*/
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .feature-card, .col-md-3{
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .col-md-3:hover{
+            transform: translateY(5px);
+            border:2px solid black;
+        }
+        .egg-icon {
+            color: #ff6b35;
+            font-size: 3rem;
+        }
+        .stats-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .navbar{
+            background-color: #667eea;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding:10px;
+        }
+        #navbarNav{
+            display: none;
+        }
+        body{
+            max-width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        .feature-card{
+            background-color: cadetblue;
+            border: 2px solid black;
+            border-radius: 25px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .stats-section{
+            border-radius: 25px;
+            margin:10px;
+        }
+        .col-md-3{
+            background-color: antiquewhite;
+            margin: 5px;
+            border: 1px solid black;
+            border-radius: 25px;
+        }
+
+
+/*Login */
+.login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .login-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+        }
+        .login-header {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .egg-icon {
+            color: #ff6b35;
+            font-size: 3rem;
+        }
+        .login-body {
+            padding: 2rem;
+        }
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .btn-login {
+            background: #007bff;
+            border: none;
+            padding: 0.75rem;
+            font-weight: 500;
+        }
+        .btn-login:hover {
+            background: #0056b3;
+        }
+        .alert {
+            border-radius: 10px;
+        }

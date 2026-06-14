@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout :: head}">
+    <title>Error - Egg Depot</title>
+</head>
+
+<body th:replace="~{layout :: body}">
+    <div th:replace="~{layout :: title('Error')}"></div>
+    <div th:replace="~{layout :: header}"></div>
+    
+    <div th:replace="~{layout :: content(~{:: .content})}">
+        <div class="content">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-danger text-white">
+                            <h5 class="mb-0"><i class="fas fa-exclamation-triangle"></i> Error</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-danger" role="alert">
+                                <h4 class="alert-heading">Oops! Something went wrong</h4>
+                                <p th:if="${status != null}" th:text="${status}">An unexpected error occurred.</p>
+                                <p th:unless="${status != null}">An unexpected error occurred.</p>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h6>What you can do:</h6>
+                                <ul>
+                                    <li><a th:href="@{/}" class="btn btn-primary"><i class="fas fa-home"></i> Go to Home</a></li>
+                                    <li><a th:href="@{/dashboard}" class="btn btn-info"><i class="fas fa-tachometer-alt"></i> Go to Dashboard</a></li>
+                                    <li><a href="javascript:history.back()" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Go Back</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mt-3 text-center">
+                                <small class="text-muted">
+                                    Error Code: <span th:if="${error != null}" th:text="${error}">Unknown</span>
+                                    <span th:unless="${error != null}">Unknown</span>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
