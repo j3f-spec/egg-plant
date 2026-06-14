@@ -7,8 +7,8 @@ com/eggdepot/config/RoleConfig.class
 com/eggdepot/controller/ProductController.class
 com/eggdepot/controller/PromotionController$PromotionValidationResponse.class
 com/eggdepot/service/PromotionService$1.class
-com/eggdepot/service/OrderService.class
 com/eggdepot/repository/ProductRepository.class
+com/eggdepot/service/OrderService.class
 com/eggdepot/model/Product$EggSize.class
 com/eggdepot/model/Order$OrderStatus.class
 com/eggdepot/service/OrderService$OrderItemRequest.class

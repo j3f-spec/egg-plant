@@ -63,17 +63,17 @@ A comprehensive Spring Boot web application for managing sales and marketing ope
 mvn spring-boot:run
 ```
 
-4. The application will start on `http://localhost:8080/egg-depot`
+4. The application will start on `/egg-depot`
 
 ### Access Points
 
-- **Home Page**: http://localhost:8080/egg-depot/
-- **Dashboard**: http://localhost:8080/egg-depot/dashboard
-- **Products**: http://localhost:8080/egg-depot/products
-- **Customers**: http://localhost:8080/egg-depot/customers
-- **Orders**: http://localhost:8080/egg-depot/orders
-- **Promotions**: http://localhost:8080/egg-depot/promotions
-- **H2 Console**: http://localhost:8080/egg-depot/h2-console
+- **Home Page**: /egg-depot/
+- **Dashboard**: /dashboard
+- **Products**: /products
+- **Customers**:/customers
+- **Orders**: /orders
+- **Promotions**: /promotions
+- **H2 Console**: /h2-console
 
 ### Database Configuration
 
