@@ -20,12 +20,12 @@ com/eggdepot/repository/OrderItemRepository.class
 com/eggdepot/repository/OrderRepository.class
 com/eggdepot/controller/UserController.class
 com/eggdepot/service/CustomerService.class
-com/eggdepot/controller/OrderController$OrderRequest.class
 com/eggdepot/service/PromotionService.class
+com/eggdepot/controller/OrderController$OrderRequest.class
 com/eggdepot/repository/PromotionRepository.class
 com/eggdepot/model/Order.class
-com/eggdepot/controller/CustomerController.class
 com/eggdepot/service/ProductService.class
+com/eggdepot/controller/CustomerController.class
 com/eggdepot/model/Promotion.class
 com/eggdepot/config/SecurityConfig.class
 com/eggdepot/model/Promotion$PromotionType.class
