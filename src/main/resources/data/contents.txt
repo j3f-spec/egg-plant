@@ -1,0 +1,61 @@
+product{
+    id
+    name
+    description
+    price
+    stockQuantity
+    type
+    size
+    imageUrl
+    date[createdAt,updatedAt]
+}
+
+customer{
+    id
+    firstName
+    lastName
+    email
+    phone
+    address
+    date[createdAt,updatedAt]
+    [...orders]
+    [...promotions]
+}
+
+order{
+    id
+    customer
+    orderItems
+    orderDate
+    status
+    totalAmount
+    discount
+    taxAmount
+    finalAmount
+    deliveryAddress
+    notes
+    date[createdAt,updatedAt]
+}
+
+orderItem{
+    id
+    order
+    product 
+    quantity
+    unitPrice
+    totalPrice
+}
+promotion{
+    id
+    code
+    name
+    description
+    type
+    discount
+    minOrderAmount
+    date[startDate,endDate,createdAt,updatedAt]
+    isActive
+    usageLimit
+    usageCount
+    customer
+}

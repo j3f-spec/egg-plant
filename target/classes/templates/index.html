@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- Welcome</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/egg-depot">
+                <i class="fas fa-egg" style="color: #ff6b35;"></i> Egg Depot
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                Menu
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <script>
+                
+            </script>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/customers">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/orders">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/promotions">Promotions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">
+                <i class="fas fa-egg egg-icon"></i> Welcome
+            </h1>
+            <p class="lead mb-4">Your comprehensive sales and marketing management system</p>
+            <a href="/dashboard" class="btn btn-primary btn-lg me-3">
+                <i class="fas fa-tachometer-alt"></i> Go to Dashboard
+            </a>
+            <br>
+            <a href="/products" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-box"></i> Browse Products
+            </a>
+        </div>
+    </div>
+
+    <div class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <i class="fas fa-box egg-icon mb-3"></i>
+                        <div class="stat-number" id="totalProducts">0</div>
+                        <div class="text-muted">Products</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <i class="fas fa-users egg-icon mb-3"></i>
+                        <div class="stat-number" id="totalCustomers">0</div>
+                        <div class="text-muted">Customers</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <i class="fas fa-shopping-cart egg-icon mb-3"></i>
+                        <div class="stat-number" id="totalOrders">0</div>
+                        <div class="text-muted">Orders</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <i class="fas fa-tags egg-icon mb-3"></i>
+                        <div class="stat-number" id="activePromotions">0</div>
+                        <div class="text-muted">Active Promotions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-box egg-icon mb-3"></i>
+                        <h5 class="card-title">Product Management</h5>
+                        <p class="card-text">Manage your egg inventory with different types and sizes. Track stock levels and pricing.</p>
+                        <a href="/products" class="btn btn-primary">Manage Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users egg-icon mb-3"></i>
+                        <h5 class="card-title">Customer Relations</h5>
+                        <p class="card-text">Keep track of your customers, their orders, and purchase history for better service.</p>
+                        <a href="/customers" class="btn btn-primary">View Customers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-chart-line egg-icon mb-3"></i>
+                        <h5 class="card-title">Sales Analytics</h5>
+                        <p class="card-text">Monitor your sales performance with detailed analytics and reporting features.</p>
+                        <a href="/dashboard" class="btn btn-primary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Egg Depot Sales & Marketing System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
