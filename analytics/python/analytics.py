@@ -8,4 +8,5 @@ result = {
     "columns": list(df.columns)
 }
 
+print(df)
 print(json.dumps(result))

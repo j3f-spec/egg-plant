@@ -16,7 +16,13 @@ public class AnalyticsController {
     AnalyticService service;
 
     @GetMapping
-    public String run() throws Exception {
+    public String run(){
+        try{
+            return service.runAnalytics();
+        }catch(Exception e){
+            System.out.println(e);
+        }
+
         return service.runAnalytics();
     }
     

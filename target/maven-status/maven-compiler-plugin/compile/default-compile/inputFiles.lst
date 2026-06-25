@@ -14,12 +14,15 @@
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/model/Product.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/config/DataInitializer.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/repository/PromotionRepository.java
+/home/j3f/V1/egg-plant/src/main/java/com/eggdepot/service/AnalyticService.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/config/SecurityConfig.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/repository/OrderRepository.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/service/PromotionService.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/controller/ProductController.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/repository/CustomerRepository.java
+/home/j3f/V1/egg-plant/src/main/java/com/eggdepot/service/RExecService.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/EggDepotSalesApplication.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/controller/CustomerController.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/service/OrderService.java
+/home/j3f/V1/egg-plant/src/main/java/com/eggdepot/controller/AnalyticsController.java
 /home/j3f/V1/egg-plant/src/main/java/com/eggdepot/controller/OrderController.java

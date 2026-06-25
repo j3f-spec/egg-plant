@@ -1,10 +1,13 @@
 package com.eggdepot.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class AnalyticService {
-    public String runAnalytics() throws Exception{
+    public String runAnalytics(String path) throws Exception{
         ProcessBuilder pb = new ProcessBuilder(
             "python3",
-            "src/main/resources/python/analytics.py"
+            path
         );
 
         Process process = pb.start();
@@ -15,6 +18,18 @@ public class AnalyticService {
 
         process.waitFor();
         
-        return output;
+        return "report";
+    }
+
+    public String runAnalytics() {
+        // Call the original method with a default value
+        try{
+            String output = this.runAnalytics("/frontend/python/analytics.py"); 
+            return output;
+        }catch(Exception e){
+            System.out.println(e);
+        }
+
+        return "Analytical report";
     }
 }
